@@ -40,7 +40,7 @@ function Gallery() {
   };
 
   return (
-    <div className='mt-10'>
+    <div className='mt-10 w-[90%] mx-auto'>
       <div className="flex justify-center mb-8">
         <div >
         <h2 className="text-3xl font-bold mb-1 relative">

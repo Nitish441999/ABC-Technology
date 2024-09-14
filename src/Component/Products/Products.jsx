@@ -68,7 +68,7 @@ function Products() {
   };
 
   return (
-    <div className="relative p-4 max-w-7xl mx-auto mt-10 ">
+    <div className="relative p-4 w-[90%] mx-auto mt-10 ">
       <div className="flex justify-center mb-16">
         <div >
         <h2 className="text-3xl font-bold mb-1 relative">
