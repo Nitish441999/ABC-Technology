@@ -1,23 +1,29 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import Slider from "react-slick";
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 // Updated client data with corrected company logos
 
   const clients = [
-    { id: 1, name: 'Client 1', image: 'https://via.placeholder.com/150' },
-    { id: 2, name: 'Client 2', image: 'https://via.placeholder.com/150' },
-    { id: 3, name: 'Client 3', image: 'https://via.placeholder.com/150' },
-    { id: 4, name: 'Client 4', image: 'https://via.placeholder.com/150' },
-    { id: 1, name: 'Client 1', image: 'https://via.placeholder.com/150' },
-    { id: 2, name: 'Client 2', image: 'https://via.placeholder.com/150' },
-    { id: 3, name: 'Client 3', image: 'https://via.placeholder.com/150' },
-    { id: 4, name: 'Client 4', image: 'https://via.placeholder.com/150' },
+    { id: 1, name: 'Client 1', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
+    { id: 2, name: 'Client 2', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
+    { id: 3, name: 'Client 3', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
+    { id: 4, name: 'Client 4', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
+    { id: 1, name: 'Client 1', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
+    { id: 2, name: 'Client 2', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
+    { id: 3, name: 'Client 3', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
+    { id: 4, name: 'Client 4', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
     // Add more clients as needed
   ];
   
 
 
 function OurClient() {
+  useEffect(()=>{
+    AOS.init()
+  })
+
   const settings = {
     dots: true,
     infinite: true,
@@ -57,7 +63,7 @@ function OurClient() {
 
   return (
     <section className=" mt-10 ">
-    <div className="container mx-auto px-4">
+    <div className="container w-[90%] mx-auto px-4">
       <div className="flex justify-center mb-8">
         <div >
         <h2 className="text-3xl font-bold mb-1 relative">
@@ -71,7 +77,7 @@ function OurClient() {
       <Slider {...settings} className=" overflow-hidden">
         {clients.map(client => (
           <div key={client.id} className="p-4">
-            <div className=" bg-orange-400 p-6 rounded-lg shadow-sm shadow-gray-700 text-center">
+            <div className=" bg-gradient-to-r to-orange-400 from-blue-700 p-6 rounded-lg shadow-sm shadow-gray-700 text-center" data-aos="zoom-in-down" data-aos-duration="1200">
               <img
                 src={client.image}
                 alt={client.name}

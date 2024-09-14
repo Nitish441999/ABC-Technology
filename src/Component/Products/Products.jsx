@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 // Sample product data
 const productData = [
@@ -47,6 +49,11 @@ const productData = [
 ];
 
 function Products() {
+
+  useEffect(()=>{
+    AOS.init()
+  })
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
@@ -83,7 +90,7 @@ function Products() {
         {productData.slice(currentIndex, currentIndex + (isMobile ? 1 : 2)).map((product) => (
           <div
             key={product.id}
-            className="flex flex-col lg:flex-row items-center bg-[rgb(251,146,60)] shadow-sm shadow-gray-700 rounded p-4 mb-4 lg:mb-0"
+            className="flex flex-col lg:flex-row items-center bg-gradient-to-r to-orange-400 from-blue-700 shadow-sm shadow-gray-700 rounded p-4 mb-4 lg:mb-0"data-aos="zoom-in-up" data-aos-duration="1200"
           >
             <div className="w-full lg:w-[40%] bg-white h-[20rem] flex items-center justify-center rounded-lg mb-4 lg:mb-0">
               <img src={product.image} alt={product.title} className="object-contain" />

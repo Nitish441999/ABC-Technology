@@ -1,6 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 function Gallery() {
+  useEffect(()=>{
+    AOS.init()
+  })
+
   // Initial center image state with title
   const [centerImage, setCenterImage] = useState({
     src: 'https://www.pngmart.com/files/6/Laser-Machine-PNG-Image-1.png',
@@ -51,7 +57,7 @@ function Gallery() {
         </div>
         </div>
       </div>
-    <div className=" mx-auto w-[90%]">
+    <div className="">
     
       <div className="grid grid-cols-5 gap-4 max-w-7xl ">
         {/* Left Images */}
@@ -59,7 +65,7 @@ function Gallery() {
           {images.slice(0, 3).map((image, index) => (
             <div
               key={index}
-              className="relative text-center group bg-gray-300 rounded-lg"
+              className="relative text-center group bg-gray-300 rounded-lg " data-aos="fade-left" data-aos-duration="1200"
               onMouseEnter={() => handleImageHover(image.src, image.title)} // Change center image on hover
             >
               <img
@@ -76,7 +82,7 @@ function Gallery() {
         </div>
 
         {/* Center Image and Title */}
-        <div className="col-span-3 relative text-center bg-gray-300 rounded-lg">
+        <div className="col-span-3 relative text-center bg-gray-300 rounded-lg" data-aos="zoom-in" data-aos-duration="1200">
           <img
             src={centerImage.src}
             className="object-cover object-center w-full h-full rounded-lg"
@@ -92,7 +98,7 @@ function Gallery() {
           {images.slice(3, 6).map((image, index) => (
             <div
               key={index}
-              className="relative text-center group bg-gray-300 rounded-lg"
+              className="relative text-center group bg-gray-300 rounded-lg" data-aos="fade-right" data-aos-duration="1200"
               onMouseEnter={() => handleImageHover(image.src, image.title)} // Change center image on hover
             >
               <img

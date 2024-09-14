@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect} from 'react';
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const AboutSection = () => {
+  useEffect(()=>{
+    AOS.init()
+  })
+
   return (
-    <section className="py-12 w-[90%] mx-auto ">
+    <section className=" w-[90%] mx-auto ">
     <div className="flex justify-center mb-8">
         <div >
         <h2 className="text-3xl font-bold mb-1 relative">
@@ -31,7 +37,7 @@ const AboutSection = () => {
         </div>
         <div className="flex flex-wrap -mx-4">
           <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div className="bg-gradient-to-r to-orange-600 from-blue-300 p-6 rounded-lg shadow-lg">
+            <div className="bg-gradient-to-r to-orange-400 from-blue-700 p-6 rounded-lg shadow-lg" data-aos="fade-left" data-aos-duration="1200">
               <h3 className="text-xl font-semibold mb-2">Our Mission</h3>
               <p className="text-black">
                 To innovate and deliver top-quality solutions that exceed our clients' expectations and make a positive impact.
@@ -39,7 +45,7 @@ const AboutSection = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div className="bg-gradient-to-r to-orange-600 from-blue-300 p-6 rounded-lg shadow-lg ">
+            <div className="bg-gradient-to-r to-orange-400 from-blue-700 p-6 rounded-lg shadow-lg " data-aos="zoom-in" data-aos-duration="1200">
               <h3 className="text-xl font-semibold mb-2">Our Values</h3>
               <ul className="list-disc list-inside text-black">
                 {/* <li>Integrity</li> */}
@@ -50,7 +56,7 @@ const AboutSection = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div className="bg-gradient-to-r to-orange-600 from-blue-300 p-6 rounded-lg shadow-lg">
+            <div className="bg-gradient-to-r to-orange-400 from-blue-700 p-6 rounded-lg shadow-lg" data-aos="fade-right" data-aos-duration="1200">
               <h3 className="text-xl font-semibold mb-2">Our Team</h3>
               <p className="text-black">
                 We have a diverse team of experts with a wide range of skills and experiences, all committed to delivering the best.

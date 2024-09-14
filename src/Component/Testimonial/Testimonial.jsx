@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const testimonials = [
   {
@@ -32,6 +34,12 @@ const testimonials = [
 ];
 
 const Testimonial = () => {
+  useEffect(()=>{
+    AOS.init()
+  })
+
+
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
@@ -56,7 +64,7 @@ const Testimonial = () => {
       </div>
       <div className="flex flex-col lg:flex-row mx-auto lg:justify-between lg:gap-4">
         {testimonials.slice(currentIndex, currentIndex + (window.innerWidth >= 1024 ? 2 : 1)).map((testimonial) => (
-          <div key={testimonial.id} className="flex-1 bg-gradient-to-r to-orange-600 from-blue-300 shadow-sm shadow-gray-700 rounded p-4 mb-4 lg:mb-0">
+          <div key={testimonial.id} className="flex-1 bg-gradient-to-r to-orange-400 from-blue-700 shadow-sm shadow-gray-700 rounded p-4 mb-4 lg:mb-0 " data-aos="zoom-in-up" data-aos-duration="1200">
             <div className="flex items-center justify-center mb-4 ">
               <img src={testimonial.image} alt={testimonial.name} className="w-16 h-16 rounded-full mr-4" />
               <div>
@@ -71,13 +79,13 @@ const Testimonial = () => {
       {/* Prev and Next Buttons */}
       <button
         onClick={handlePrev}
-        className="absolute left-4 transform -translate-y-2/2 px-4 py-2 my-3 bg-[#1d4ed8] text-white rounded hover:bg-blue-800"
+        className="absolute left-4 transform -translate-y-2/2 px-4 py-2 my-3 bg-[#1d4ed8] text-white rounded hover:bg-blue-800" data-aos="fade-left" data-aos-duration="1200"
       >
         Previous
       </button>
       <button
         onClick={handleNext}
-        className="absolute  right-4 transform -translate-y-2/2 px-4 py-2 my-3  bg-[#1d4ed8] text-white rounded hover:bg-blue-800"
+        className="absolute  right-4 transform -translate-y-2/2 px-4 py-2 my-3  bg-[#1d4ed8] text-white rounded hover:bg-blue-800" data-aos="fade-right" data-aos-duration="1200"
       >
         Next
       </button>
