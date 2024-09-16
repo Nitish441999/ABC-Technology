@@ -40,8 +40,8 @@ const Navbar = () => {
             )}
           </li>
 
-          <li className="hover:text-blue-800 cursor-pointer">Services</li>
-          <li className="hover:text-blue-800 cursor-pointer">Product</li>
+          {/* <li className="hover:text-blue-800 cursor-pointer">Services</li> */}
+          <li className="hover:text-blue-800 cursor-pointer">Product & Services</li>
           <li className="hover:text-blue-800 cursor-pointer">Contact</li>
         </ul>
         <div className="md:hidden">
@@ -75,8 +75,8 @@ const Navbar = () => {
             )}
           </li>
 
-          <li className="text-xl hover:text-blue-800 cursor-pointer">Services</li>
-          <li className="text-xl hover:text-blue-800 cursor-pointer">Product</li>
+          {/* <li className="text-xl hover:text-blue-800 cursor-pointer">Services</li> */}
+          <li className="text-xl hover:text-blue-800 cursor-pointer">Product & Services</li>
           <li className="text-xl hover:text-blue-800 cursor-pointer">Contact</li>
         </ul>
       </div>

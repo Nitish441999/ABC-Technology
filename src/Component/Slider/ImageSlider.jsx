@@ -33,7 +33,9 @@ const ImageSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     prevArrow: <PreviousButton />,
