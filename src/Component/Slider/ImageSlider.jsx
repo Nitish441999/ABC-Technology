@@ -49,9 +49,9 @@ const ImageSlider = () => {
             src="https://i.imgur.com/zyKuyyU.jpeg"
             alt="Slide 1"
           />
-          <div className="absolute bottom-[25%] left-[40%] bg-black bg-opacity-50 text-white p-4 rounded">
-            <h2 className="text-xl font-bold">Slide 1 Title</h2>
-            <p>Slide 1 Description</p>
+          <div className="absolute bottom-[25%] left-[5%] right-[5%] bg-black bg-opacity-50 text-white p-4 rounded">
+            <h2 className="text-5xl font-bold text-center">It's easier to be productive when you're clear about what you want to do</h2>
+           
           </div>
         </div>
         <div className="relative">
@@ -60,9 +60,9 @@ const ImageSlider = () => {
             src="http://abctech.co.in/images/slide-pics/slide1-bg.jpg"
             alt="Slide 2"
           />
-          <div className="absolute bottom-[25%] left-[40%] bg-black bg-opacity-50 text-white p-4 rounded">
-            <h2 className="text-xl font-bold">Slide 2 Title</h2>
-            <p>Slide 2 Description</p>
+          <div className="absolute bottom-[25%] left-[5%] right-[5%] bg-black bg-opacity-50 text-white p-4 rounded">
+            <h2 className="text-5xl font-bold text-center">Quality is never an accident it is always the result of intelligent effort. </h2>
+            
           </div>
         </div>
         <div className="relative">
@@ -71,9 +71,9 @@ const ImageSlider = () => {
             src="https://i.imgur.com/zyKuyyU.jpeg"
             alt="Slide 3"
           />
-          <div className="absolute bottom-[25%] left-[40%] bg-black bg-opacity-50 text-white p-4 rounded">
-            <h2 className="text-xl font-bold">Slide 3 Title</h2>
-            <p>Slide 3 Description</p>
+          <div className="absolute bottom-[25%] left-[5%] right-[5%] bg-black bg-opacity-50 text-white p-4 rounded">
+            <h2 className="text-5xl font-bold text-center">It's easier to be productive when you're clear about what you want to do</h2>
+            
           </div>
         </div>
         <div className="relative">
@@ -82,9 +82,9 @@ const ImageSlider = () => {
             src="http://abctech.co.in/images/slide-pics/slide1-bg.jpg"
             alt="Slide 4"
           />
-          <div className="absolute bottom-[25%] left-[40%] bg-black bg-opacity-50 text-white p-4 rounded">
-            <h2 className="text-xl font-bold">Slide 4 Title</h2>
-            <p>Slide 4 Description</p>
+          <div className="absolute bottom-[25%] left-[5%] right-[5%] bg-black bg-opacity-50 text-white p-4 rounded">
+            <h2 className="text-5xl font-bold text-center">Quality is never an accident it is always the result of intelligent effort.</h2>
+            
           </div>
         </div>
       </Slider>

@@ -6,14 +6,12 @@ import "aos/dist/aos.css"
 // Updated client data with corrected company logos
 
   const clients = [
-    { id: 1, name: 'Client 1', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
-    { id: 2, name: 'Client 2', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
-    { id: 3, name: 'Client 3', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
-    { id: 4, name: 'Client 4', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
-    { id: 1, name: 'Client 1', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
-    { id: 2, name: 'Client 2', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
-    { id: 3, name: 'Client 3', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
-    { id: 4, name: 'Client 4', image: 'https://images.unsplash.com/photo-1678483790053-71367bc7a02c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdvb2dsZSUyMGxvZ298ZW58MHx8MHx8fDA%3D' },
+    { id: 1, name: 'Client 1', image: 'https://www.iopsa.org/resources/Pictures/Advanced%20Valves%20Logo%2021%20ICON.png' },
+    { id: 2, name: 'Client 2', image: 'https://ik.imagekit.io/kkbzr2uz4cp/stock/nse/motherson.png' },
+    { id: 3, name: 'Client 3', image: 'https://kbidongkook.com/images/logo-kbi_group.png' },
+    { id: 2, name: 'Client 2', image: 'https://www.iopsa.org/resources/Pictures/Advanced%20Valves%20Logo%2021%20ICON.png' },
+    { id: 3, name: 'Client 3', image: 'https://cdn.freebiesupply.com/logos/large/2x/mt-t-logo-png-transparent.png' },
+    { id: 4, name: 'Client 4', image: 'https://ik.imagekit.io/kkbzr2uz4cp/stock/nse/motherson.png' },
     // Add more clients as needed
   ];
   
@@ -77,11 +75,11 @@ function OurClient() {
       <Slider {...settings} className=" overflow-hidden">
         {clients.map(client => (
           <div key={client.id} className="p-4">
-            <div className=" bg-gradient-to-r to-orange-400 from-blue-700 p-6 rounded-lg shadow-sm shadow-gray-700 text-center" data-aos="zoom-in-down" data-aos-duration="1200">
+            <div className=" bg-gradient-to-r to-orange-400 from-blue-700 p-6 rounded-lg shadow-sm shadow-gray-700 text-center" data-aos="zoom-in-up" data-aos-duration="1200">
               <img
                 src={client.image}
                 alt={client.name}
-                className="w-24 h-24 object-cover rounded-full mx-auto mb-4"
+                className="w-24 h-24 object-contain rounded-full mx-auto mb-4"
               />
               <h3 className="text-xl font-semibold">{client.name}</h3>
             </div>

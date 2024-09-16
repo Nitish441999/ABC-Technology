@@ -9,33 +9,33 @@ function Gallery() {
 
   // Initial center image state with title
   const [centerImage, setCenterImage] = useState({
-    src: 'https://www.pngmart.com/files/6/Laser-Machine-PNG-Image-1.png',
+    src: 'https://www.hansyueming.com/Uploads/202208/12560.png',
     title: 'Beautiful Landscape'
   });
 
   const images = [
     {
-      src: 'https://www.pngmart.com/files/6/Laser-Machine-PNG-Image-1.png',
+      src: 'https://static.vecteezy.com/system/resources/previews/021/666/158/original/3d-illustration-of-industrial-factory-building-representing-factory-buildings-with-industrial-structures-3d-illustration-png.png',
       title: 'Beautiful Landscape'
     },
     {
-      src: 'https://www.pngmart.com/files/6/Laser-Machine-PNG-Image-1.png',
+      src: 'https://static.bodor.com/file/us/News/COMPANY/f3bde478db6f40c4b0a76666d1a66d24.png',
       title: 'Mountain Peaks'
     },
     {
-      src: 'https://www.pngmart.com/files/6/Laser-Machine-PNG-Image-1.png',
+      src: 'https://procamservices.com/wp-content/uploads/2020/10/20130802_131200-1280x960.png',
       title: 'Sunset Glow'
     },
     {
-      src: 'https://www.pngmart.com/files/6/Laser-Machine-PNG-Image-1.png',
+      src: 'https://www.rfshydraulics.com/uploads/4/2/8/4/42846051/published/20160422-151006-copy.png?1589352810',
       title: 'Foggy Forest'
     },
     {
-      src: 'https://www.pngmart.com/files/6/Laser-Machine-PNG-Image-1.png',
+      src: 'https://www.hansyueming.com/Uploads/202208/12560.png',
       title: 'Rocky Shoreline'
     },
     {
-      src: 'https://www.pngmart.com/files/6/Laser-Machine-PNG-Image-1.png',
+      src: 'https://static.vecteezy.com/system/resources/previews/021/666/158/original/3d-illustration-of-industrial-factory-building-representing-factory-buildings-with-industrial-structures-3d-illustration-png.png',
       title: 'Nature Path'
     }
   ];

@@ -11,7 +11,7 @@ function Footer() {
   return (
     <div>
 
-            <footer className="px-4 divide-y bg-gradient-to-r to-orange-600 from-white  text-white mt-20">
+            <footer className="px-4 divide-y bg-gradient-to-r to-orange-600 from-white  text-black mt-20">
                 <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
                     <div className="lg:w-1/3">
                         <a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
