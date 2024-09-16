@@ -59,7 +59,7 @@ const ImageSlider = () => {
         <div className="relative">
           <img
             className="w-full h-[35rem] object-cover"
-            src="http://abctech.co.in/images/slide-pics/slide1-bg.jpg"
+            src="https://i.imgur.com/YAKyH7U.jpeg"
             alt="Slide 2"
           />
           <div className="absolute bottom-[25%] left-[5%] right-[5%] bg-black bg-opacity-50 text-white p-4 rounded">
@@ -81,7 +81,7 @@ const ImageSlider = () => {
         <div className="relative">
           <img
             className="w-full h-[35rem] object-cover"
-            src="http://abctech.co.in/images/slide-pics/slide1-bg.jpg"
+            src="https://i.imgur.com/YAKyH7U.jpeg"
             alt="Slide 4"
           />
           <div className="absolute bottom-[25%] left-[5%] right-[5%] bg-black bg-opacity-50 text-white p-4 rounded">

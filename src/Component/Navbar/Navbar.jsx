@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className=" bg-gradient-to-r to-orange-600 from-white  sticky top-0 text-white px-4 py-3 w-full z-10 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-xl font-bold flex justify-center items-center">
-          <img src='http://abctech.co.in/logo1.png' alt="logo" className=' w-16 h-12' /> 
+          <img src='https://i.imgur.com/jbqcnpj.png' alt="logo" className=' w-16 h-12' /> 
           <span>
             <h3 className=' text-gray-500'>ABC Technology</h3>
           </span>
